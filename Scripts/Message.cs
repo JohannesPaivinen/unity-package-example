@@ -1,16 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Namespace.UnityPackageExample
 {
-
-    public static class Message
+    public class Message : MonoBehaviour
     {
-
-        public static void HelloWorld()
+        public string name;
+        
+        public void Start()
         {
-
-            Debug.Log("Hello, World");
-
+            Debug.Log("Hello " + name + "!");
         }
 
     }
